@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1.
+		var numberArray = [3,6,2,4,1,5]; 
+		var cc=numberArray .reverse()
+		console.log(cc)
+		// 2.
+		var numberArrayB=[3,6,2,4,1,5]; 
+		for(var i=0;i<numberArrayB.length;i++){
+			for(var j = i + 1;j<numberArrayB.length;j++){
+				if(numberArrayB[i]<numberArrayB[j]){
+				var tmp = numberArrayB[i];
+				numberArrayB[i] = numberArrayB[j];
+				numberArrayB[j] = tmp;
+
+				}
+			}
+		}
+		console.log(numberArrayB)
+	</script>
+	
+</body>
+</html>
